@@ -1,0 +1,315 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff5f9;
+  color: #594650;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "Yu Gothic",
+    sans-serif;
+}
+
+.header {
+  background: #ffffff;
+  padding: 25px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f7e4ed;
+}
+
+.sub-title {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #c58ba3;
+  margin: 0 0 5px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 27px;
+  color: #9f5274;
+}
+
+.header h1 span {
+  color: #df91b0;
+}
+
+.header-icon {
+  font-size: 32px;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 18px;
+}
+
+.welcome {
+  margin-bottom: 20px;
+}
+
+.welcome h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #9f5274;
+}
+
+.welcome p {
+  font-size: 13px;
+  color: #a58b96;
+  margin-top: 0;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 17px;
+  box-shadow: 0 3px 12px #e8cbd733;
+}
+
+.summary-card p {
+  font-size: 12px;
+  color: #a58b96;
+  margin: 0 0 8px;
+}
+
+.summary-card strong {
+  font-size: 29px;
+  color: #bf6e91;
+}
+
+.summary-card span {
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.task-section {
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-heading h2,
+.add-section h2 {
+  font-size: 18px;
+  color: #9f5274;
+}
+
+.section-heading span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #c58ba3;
+}
+
+#task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#empty-message {
+  text-align: center;
+  color: #bd9eac;
+  font-size: 13px;
+  line-height: 2;
+  padding: 25px 0;
+}
+
+.task-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 17px;
+  box-shadow: 0 3px 12px #e8cbd733;
+  border-left: 4px solid #e5a9c1;
+}
+
+.task-card.completed {
+  opacity: 0.65;
+  border-left-color: #c9c0c5;
+}
+
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.task-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px;
+  color: #654b57;
+  overflow-wrap: anywhere;
+}
+
+.task-subject {
+  font-size: 12px;
+  color: #b18b9c;
+  margin: 0 0 12px;
+}
+
+.status {
+  font-size: 10px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.status-danger {
+  background: #ffe4e9;
+  color: #d65e7b;
+}
+
+.status-warning {
+  background: #fff0d9;
+  color: #c58b45;
+}
+
+.status-normal {
+  background: #fcebf3;
+  color: #bd7796;
+}
+
+.status-completed {
+  background: #f0edf0;
+  color: #93858d;
+}
+
+.task-time {
+  font-size: 13px;
+  color: #9d7185;
+  margin: 8px 0;
+}
+
+.task-info {
+  font-size: 12px;
+  color: #a58b96;
+  margin: 8px 0 14px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.task-actions button {
+  border: none;
+  border-radius: 9px;
+  padding: 9px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.complete-button {
+  background: #f8e3ed;
+  color: #a55377;
+}
+
+.delete-button {
+  background: #f2eff1;
+  color: #8d7c85;
+}
+
+.add-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px #e8cbd733;
+}
+
+.add-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 12px;
+  margin: 12px 0 7px;
+  color: #987183;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f0dce5;
+  border-radius: 9px;
+  background: #fffafd;
+  font-size: 14px;
+  color: #594650;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #d78eac;
+}
+
+.add-button {
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #cf83a2;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-button:active {
+  background: #b96b8b;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #bd91a5;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer small {
+  font-size: 10px;
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 16px 13px;
+  }
+
+  .summary-card {
+    padding: 13px;
+  }
+
+  .task-card {
+    padding: 14px;
+  }
+}
